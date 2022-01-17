@@ -28,7 +28,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
 .test{
-  backround-color: black;
+  background-color: black;
+  color: white;
+}
+
+
+.test3{
+  width: 100%;
+}
+.test2{
+  background-color: purple;
   color: white;
 }
 
