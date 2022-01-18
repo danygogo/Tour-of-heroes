@@ -10,6 +10,8 @@
 
 .messages{
     width: 30%;
+    height: 250px;
+    overflow-y: scroll;
 }
 
 a{

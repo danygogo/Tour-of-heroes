@@ -7,18 +7,20 @@
         (click)="onSelect(hero)" 
         [class.selected]="hero === selectedHero" 
         >
-            <span class="numbers" >{{hero.id}}</span> 
-            <span class="names" [class.myColor]="myColor">{{hero.name}}</span>
-            
+            <a routerLink="/detail/{{hero.id}}">
+                <span class="numbers" >{{hero.id}}</span>
+                <span class="names" [class.myColor]="myColor">{{hero.name}}</span>
+                
+            </a>
     </li>
 </ul>
 
 
 <!-- Details -->
-<div class="divBox">
+<!-- <div class="divBox">
     <h3>Hero's details: <small>@Input</small></h3>
     <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-</div>
+</div> -->
 
 
 
