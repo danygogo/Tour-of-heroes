@@ -1,31 +1,46 @@
 
-
+<!-- List of heroes -->
 
 <h2>My Heroes</h2>
-<ul>
-    <li *ngFor="let hero of heroes" (click)="onSelect(hero)" [class.selected]="hero === selectedHero"><span class="badge">{{hero.id}}</span> {{hero.name}}</li>
+<ul class="heroes">
+    <li *ngFor="let hero of heroes" 
+        (click)="onSelect(hero)" 
+        [class.selected]="hero === selectedHero" 
+        >
+            <span class="numbers" >{{hero.id}}</span> 
+            <span class="names" [class.myColor]="myColor">{{hero.name}}</span>
+            
+    </li>
 </ul>
 
 
-<label>Name: </label>
-<input type="text" [(ngModel)] = "superHero.name">
+<!-- Details -->
+<div class="divBox">
+    <h3>Hero's details: <small>@Input</small></h3>
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+</div>
 
-<br>
-<p>{{superHero.name}}</p>
 
 
-
-<ng-container>
+<!-- NgModel - Two way databinding -->
+<div class="divBox">
+    <h3>Getting data: <small>Two way databinding</small></h3>
+    <label>Name: </label>
+    <input type="text" [(ngModel)] = "superHero.name">
     
-    
-    <div *ngIf="selectedHero">
-        <h2>{{selectedHero.name | uppercase}} Details</h2>
-        <div><span>id: </span>{{selectedHero.id}}</div>
-        <div>
-          <label for="hero-name">Hero name: </label>
-          <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
-        </div>
+    <br>
+    <span>Typed name: {{superHero.name}}</span>
+</div>
+
+
+
+<!-- Change color - One way databindig -->   
+
+    <div class="divBox">
+        <h3>Sending data: <small>One way databinding</small></h3>
+        <label >I want color </label>
+        <input type="checkbox" [(ngModel)]="myColor">
+        <span>   (look at the list)</span>
     </div>
-    <!-- https://angular.io/guide/attribute-binding#class-binding -->
 
-</ng-container>
+

@@ -1,0 +1,17 @@
+.flexDiv{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.heroesList{
+    width: 30%;
+}
+
+.messages{
+    width: 30%;
+}
+
+a{
+    margin-left: 10px;
+}

@@ -38,3 +38,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .test4{
   color:#369
 }
+
+.content{
+  margin: 20px;
+  width: 100%;
+}
+
+.divBox{
+  margin-top: 30px;
+  border-color: rgb(66, 66, 66);
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 5px 5px 5px rgb(107, 107, 107);
+  padding: 10px;
+}

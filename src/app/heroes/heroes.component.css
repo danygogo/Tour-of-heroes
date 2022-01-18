@@ -1,3 +1,46 @@
-.selected{
-    background-color: darkgrey;
+.myColor{
+  color: blue;
 }
+
+
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.numbers{
+  position: absolute;
+  color: white;
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  text-align: center;
+}
+
+.names{
+  position: absolute;
+  left: 20%;
+  padding-left: 10px;
+}
+
+li{
+  position: relative;
+  background-color: cornflowerblue;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  width: 80%;
+  min-width: 100px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.selected{
+  background-color: rgb(143, 180, 248);
+}
+
